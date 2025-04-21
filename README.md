@@ -1,6 +1,6 @@
 # Simple Stereo Depth Estimation with YOLOv8 Tracking
 
-โปรเจกต์นี้นำเสนอขั้นตอนการทำงานที่ผสาน **การประเมินความลึกจากภาพด้วยกล้องสเตอริโอ (stereo vision)** เข้ากับ **การตรวจจับและติดตามวัตถุด้วย YOLOv8** โดยออกแบบมาเพื่อรองรับการทำงานแบบเรียลไทม์ผ่านระบบกล้องสเตอริโอ
+โปรเจกต์นี้นำเสนอขั้นตอนการทำงานที่ผสานการประเมินความลึกจากภาพด้วยกล้องสเตอริโอ (stereo vision) เข้ากับการตรวจจับและติดตามวัตถุด้วย YOLOv8 โดยออกแบบมาเพื่อรองรับการทำงานแบบเรียลไทม์ผ่านระบบกล้องสเตอริโอ
 
 ---
 
@@ -8,13 +8,13 @@
 
 ### ขั้นตอนการใช้งาน:
 
-1. **ถ่ายภาพ Calibration ของกระดานหมากรุก (chessboard)** อย่างน้อย 30 ภาพ โดยใช้กล้อง stereo เพื่อคำนวณพารามิเตอร์ภายในกล้อง และระยะสัมพันธ์ระหว่างกล้องทั้งสอง (ใช้สคริปต์ [`stereo_capture.py`](stereo_capture.py)) 
+1. ถ่ายภาพ Calibration ของกระดานหมากรุก (chessboard) อย่างน้อย 30 ภาพ โดยใช้กล้อง stereo เพื่อคำนวณพารามิเตอร์ภายในกล้อง และระยะสัมพันธ์ระหว่างกล้องทั้งสอง (ใช้สคริปต์ [`stereo_capture.py`](stereo_capture.py)) 
 
-2. ทำการ **Rectification (ปรับแนวภาพ)** เพื่อให้ภาพซ้าย-ขวาอยู่ในแนวเดียวกัน และลดความผิดเพี้ยน (undistortion)
+2. ทำการ Rectification (ปรับแนวภาพ) เพื่อให้ภาพซ้าย-ขวาอยู่ในแนวเดียวกัน และลดความผิดเพี้ยน (undistortion)
 
-3. ใช้ **YOLOv8** เพื่อตรวจจับวัตถุในภาพฝั่งซ้าย (Left Image) ของกล้อง stereo
+3. ใช้ YOLOv8 เพื่อตรวจจับวัตถุในภาพฝั่งซ้าย (Left Image) ของกล้อง stereo
 
-4. สร้าง **แผนที่ความลึก (Disparity Map)** จากภาพ rectified ซ้ายและขวา
+4. สร้างแผนที่ความลึก (Disparity Map) จากภาพ rectified ซ้ายและขวา
 
 5. นำค่า disparity มาคำนวณระยะของวัตถุ (Z-axis in meters) โดยอิงจาก geometry ของกล้อง stereo
 
@@ -43,16 +43,16 @@
 Z = (focal\_length \times baseline) / disparity
 ```
 
-- ปรับค่า Z ด้วย scaling factor จากการคาลิเบรตกับระยะจริง
+- ปรับค่า Z ด้วย scaling factor โดยอ้างอิงจากระยะจริงที่ผู้ใช้กำหนดเองเพื่อความแม่นยำตามสถานการณ์ใช้งาน
 
 ### YOLOv8 Detection
-- ใช้ `Ultralytics` YOLOv8 (`yolov8n.pt`)
-- ตรวจจับและ track objects ที่น่าสนใจ เช่น `person`, `bottle`, `cup`, `cell phone`, ฯลฯ
+- ใช้ Ultralytics YOLOv8 (`yolov8n.pt`)
+- ตรวจจับและติดตามวัตถุที่น่าสนใจ เช่น `person`, `bottle`, `cup`, `cell phone` เป็นต้น
 
 ### Visualization
-- แสดงผล bounding box + ID + class name + distance
-- ความลึกแสดงเป็น colormap (Jet)
-- บันทึกวิดีโอเป็น `tracked_objects_output.mp4`
+- แสดงผล bounding box พร้อม ID, ชื่อคลาส และระยะห่าง
+- แสดงแผนที่ความลึกในรูปแบบ colormap (Jet)
+- บันทึกวิดีโอผลลัพธ์เป็น `tracked_objects_output.mp4`
 
 ---
 
@@ -60,23 +60,21 @@ Z = (focal\_length \times baseline) / disparity
 - OpenCV
 - NumPy
 - Ultralytics (YOLOv8)
-- Python 3.8+
+- Python 3.8 ขึ้นไป
 
 ---
 
 ## Distance Estimation Result
 ![ตัวอย่างผลลัพธ์](distance_estimation.gif)
 
-
-
 ---
 
 ## หมายเหตุการใช้งาน
-- ควรใช้กล้อง stereo จริงที่แสดงภาพซ้าย/ขวาในเฟรมเดียวกัน
-- ค่า `baseline`, `focal_length` ควรเทียบกับหน่วยจริงเพื่อความแม่นยำของ Z
-- รองรับการแสดงผลและบันทึกวิดีโอพร้อมกันแบบ real-time
+- ควรใช้กล้อง stereo จริงที่สามารถแสดงภาพซ้ายและขวาในเฟรมเดียวกัน
+- ค่า `baseline` และ `focal_length` ควรอ้างอิงจากค่าที่ได้จากการคาลิเบรต เพื่อให้การคำนวณระยะมีความแม่นยำ
+- รองรับการประมวลผลและบันทึกวิดีโอแบบเรียลไทม์
 
 ---
 
-- โค้ดนี้ดัดแปลงและพัฒนาต่อยอดจาก Ultralytics YOLOv8 + OpenCV stereo vision API
-- พัฒนาโดย [MorseTech Lab](www.morsetechlab.com)
+- โค้ดนี้ดัดแปลงและพัฒนาต่อยอดจาก Ultralytics YOLOv8 และ OpenCV Stereo Vision API
+- พัฒนาโดย [MorseTech Lab](https://www.morsetechlab.com)
