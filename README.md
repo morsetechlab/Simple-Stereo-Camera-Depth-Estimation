@@ -64,7 +64,7 @@ Z = (focal\_length \times baseline) / disparity
 
 ---
 
-## Distance Estimation
+## Distance Estimation Result
 ![ตัวอย่างผลลัพธ์](distance_estimation.gif)
 
 
