@@ -1,4 +1,4 @@
-# 📘 [เวอร์ชั่นภาษาไทยที่นี่](README.md)
+# 📘 [English version available here](README_EN.md)
 
 # Simple Stereo Depth Estimation with YOLOv8 Tracking
 
