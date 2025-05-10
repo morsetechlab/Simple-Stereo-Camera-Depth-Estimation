@@ -79,11 +79,14 @@ Z = (focal\_length \times baseline) / disparity
 ---
 
 - This code is adapted and extended from [Ultralytics YOLOv8](https://github.com/ultralytics/ultralytics) and [OpenCV Stereo Vision API](https://docs.opencv.org/4.x/dd/d53/tutorial_py_depthmap.html).
+
+
+## Attribution
+
+- [YOLOv8](https://github.com/ultralytics/ultralytics) by Ultralytics – licensed under **AGPLv3**
+- [OpenCV](https://github.com/opencv/opencv) – licensed under **Apache License 2.0**
 - Developed by [MorseTech Lab](https://www.morsetechlab.com).
 
 ## 🛡️ License
 
 This project is licensed under the [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE), in order to comply with the licenses of core dependencies used in this project
-
-- [YOLOv8](https://github.com/ultralytics/ultralytics) by Ultralytics – licensed under **AGPLv3**
-- [OpenCV](https://github.com/opencv/opencv) – licensed under **Apache License 2.0**
