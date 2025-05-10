@@ -83,9 +83,9 @@ Z = (focal\_length \times baseline) / disparity
 
 ## Attribution
 
-- [OpenCV](https://github.com/opencv/opencv) ซึ่งอยู่ภายใต้ **Apache License 2.0**
-- [YOLOv8](https://github.com/ultralytics/ultralytics) โดย Ultralytics ซึ่งอยู่ภายใต้ **AGPLv3**
-- พัฒนาโดย [MorseTech Lab](https://www.morsetechlab.com)
+- **Open source computer vision library** [OpenCV](https://github.com/opencv/opencv)
+- **YOLOv8** [Ultralytics](https://github.com/ultralytics/ultralytics)
+- **Developed by** [MorseTech Lab](https://www.morsetechlab.com)
 
 ## 🛡️ License
 
