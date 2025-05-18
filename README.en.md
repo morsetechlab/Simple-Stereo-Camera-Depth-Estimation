@@ -114,3 +114,17 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
 <!--
 tags: Stereo Vision, Depth Estimation, YOLOv8, OpenCV, Real-time Tracking, Robotics, ADAS, Python Computer Vision, 3D Perception, Ultranalytics, Z-axis measurement
 -->
+
+<!-- Open Graph / Twitter Meta -->
+<!--
+<meta property="og:title" content="Stereo Depth Estimation with YOLOv8 Tracking" />
+<meta property="og:description" content="Real-time object detection and depth estimation using stereo vision and YOLOv8. Ideal for robotics, ADAS, and 3D computer vision applications." />
+<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/stereo-depth-yolov8-tracking/main/distance-estimation.gif" />
+<meta property="og:url" content="https://github.com/morsetechlab/stereo-depth-yolov8-tracking" />
+<meta property="og:type" content="website" />
+
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Stereo Depth Estimation with YOLOv8 Tracking" />
+<meta name="twitter:description" content="Track and estimate object distance in real-time using stereo cameras and YOLOv8. Built for robotics and embedded systems." />
+<meta name="twitter:image" content="https://raw.githubusercontent.com/morsetechlab/stereo-depth-yolov8-tracking/main/distance-estimation.gif" />
+-->
