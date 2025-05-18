@@ -108,6 +108,8 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
 }
 ```
 
+<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/stereo-depth-yolov8-tracking/main/distance-estimation.gif" />
+
 <!--
 tags: Stereo Vision, Depth Estimation, YOLOv8, OpenCV, Real-time Tracking, Robotics, ADAS, Python Computer Vision, 3D Perception, Ultranalytics, Z-axis measurement
 -->
