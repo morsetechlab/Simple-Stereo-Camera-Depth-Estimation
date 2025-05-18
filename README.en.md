@@ -1,6 +1,13 @@
 # 📘 [เวอร์ชั่นภาษาไทยที่นี่](README.md)
 
+![Model: Stereo Depth + YOLOv8](https://img.shields.io/badge/Model-Stereo%20YOLOv8-purple?style=for-the-badge)
+![Task: Depth Estimation](https://img.shields.io/badge/Task-3D%20Object%20Tracking-blue?style=for-the-badge)
+![Framework: OpenCV + Ultralytics](https://img.shields.io/badge/Framework-OpenCV%20%7C%20YOLOv8-red?style=for-the-badge)
+![Real-time Ready](https://img.shields.io/badge/Real--time-Yes-green?style=for-the-badge)
+
 # Simple Stereo Depth Estimation with YOLOv8 Tracking
+
+> Real-time depth-aware object detection and tracking using stereo vision and YOLOv8. Built for robotics, computer vision research, and embedded systems.
 
 This project presents a workflow that combines stereo vision depth estimation with object detection and tracking using YOLOv8. It is designed for real-time operation through a stereo camera system.
 
@@ -90,3 +97,17 @@ Z = (focal\_length \times baseline) / disparity
 ## 🛡️ License
 
 This project is licensed under the [GNU Affero General Public License v3.0 (AGPLv3)](LICENSE), in order to comply with the licenses of core dependencies used in this project
+
+## Citation
+```bibtex
+@misc{morsetechlab2025stereoyolo,
+  title = {Stereo Depth Estimation with YOLOv8: Real-time 3D Object Tracking using OpenCV and Ultralytics},
+  author = {MorseTech Lab},
+  year = {2025},
+  url = {https://github.com/morsetechlab/stereo-depth-yolov8-tracking}
+}
+```
+
+<!--
+tags: Stereo Vision, Depth Estimation, YOLOv8, OpenCV, Real-time Tracking, Robotics, ADAS, Python Computer Vision, 3D Perception, Ultranalytics, Z-axis measurement
+-->

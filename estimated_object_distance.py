@@ -5,6 +5,8 @@ from ultralytics import YOLO
 
 # Load YOLOv8 model for tracking
 yolo_model = YOLO("yolov8n.pt")  # Load YOLOv8n pretrained model
+yolo_model.to(device)
+yolo_model.fuse()
 
 # Load calibration parameters
 calibration_file = "stereo_calib_params.npz"
