@@ -1,9 +1,8 @@
 # 📘 [English version available here](README.en.md)
 
-
-![Model: Stereo Depth + YOLOv8](https://img.shields.io/badge/Model-Stereo%20YOLOv8-purple?style=for-the-badge)
+![Model: Stereo Depth + YOLOv8](https://img.shields.io/badge/Model-YOLOv8-purple?style=for-the-badge)
 ![Task: Depth Estimation](https://img.shields.io/badge/Task-3D%20Object%20Tracking-blue?style=for-the-badge)
-![Framework: OpenCV + Ultralytics](https://img.shields.io/badge/Framework-OpenCV%20%7C%20YOLOv8-red?style=for-the-badge)
+![Framework: OpenCV + Ultralytics](https://img.shields.io/badge/Framework-OpenCV%20%7C%20Ultralytics-red?style=for-the-badge)
 ![Real-time Ready](https://img.shields.io/badge/Real--time-Yes-green?style=for-the-badge)
 
 # Simple Stereo Depth Estimation with YOLOv8 Tracking
