@@ -1,7 +1,7 @@
 # 📘 [เวอร์ชั่นภาษาไทยที่นี่](README.md)
 
 ![Task: Object Tracking + Depth Estimation](https://img.shields.io/badge/Task-Object%20Tracking%20%2B%20Depth%20Estimation-blue?style=for-the-badge)
-![Model: YOLOv8](https://img.shields.io/badge/Model-YOLOv8%7C%20Ultralytics-purple?style=for-the-badge)
+![Model: YOLOv8 | Ultralytics](https://img.shields.io/badge/Model-YOLOv8%20%7C%20Ultralytics-purple?style=for-the-badge)
 ![Framework: OpenCV](https://img.shields.io/badge/Framework-OpenCV-red?style=for-the-badge)
 ![Real-time Ready](https://img.shields.io/badge/Real--time-Yes-green?style=for-the-badge)
 
