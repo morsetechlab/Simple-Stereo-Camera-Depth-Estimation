@@ -66,8 +66,9 @@ Z = (focal\_length \times baseline) / disparity
 ---
 
 ## Dependencies
-- OpenCV
 - NumPy
+- OpenCV
+- Torch
 - Ultralytics (YOLOv8)
 - Python 3.8 ขึ้นไป
 

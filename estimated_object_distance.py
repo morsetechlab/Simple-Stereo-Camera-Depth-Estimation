@@ -1,7 +1,11 @@
 import cv2
 import numpy as np
 import random
+import torch
 from ultralytics import YOLO
+
+
+device = "cuda" if torch.cuda.is_available() else ("mps" if torch.backends.mps.is_available() else "cpu")
 
 # Load YOLOv8 model for tracking
 yolo_model = YOLO("yolov8n.pt")  # Load YOLOv8n pretrained model
