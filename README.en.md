@@ -75,7 +75,10 @@ Z = (focal\_length \times baseline) / disparity
 ---
 
 ## Distance Estimation and Depth Map
-<img src="distance-estimation.gif" alt="Sample Results" style="width: 100%;" />
+
+<p align="center">
+  <img src="distance-estimation.gif" alt="distance-estimation-result" width="100%" />
+</p>
 
 ---
 
@@ -108,8 +111,6 @@ This project is licensed under the [GNU Affero General Public License v3.0 (AGPL
   url = {https://github.com/morsetechlab/stereo-depth-yolov8-tracking}
 }
 ```
-
-<meta property="og:image" content="https://raw.githubusercontent.com/morsetechlab/stereo-depth-yolov8-tracking/main/distance-estimation.gif" />
 
 <!--
 tags: Stereo Vision, Depth Estimation, YOLOv8, OpenCV, Real-time Tracking, Robotics, ADAS, Python Computer Vision, 3D Perception, Ultranalytics, Z-axis measurement
